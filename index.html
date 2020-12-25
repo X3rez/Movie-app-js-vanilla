@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Movie App</title>
+    <link rel="stylesheet" href="./css/sass/main.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"></head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <a href="/"><img class="navigation__logo" src="./asset/Img/logo.jpg" alt="Logo"/>
+        </a>
+        <ul class="navigation__ul">
+          <li class="navigation__li"><a class="navigation__link" href="/">HOME </a></li>
+          <li class="navigation__li"><a class="navigation__link" href="#">THE BEST</a></li>
+          <li class="navigation__li"><a class="navigation__link" href="#">PREMIUM</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form class="search">
+      <input class="search__input" type="search" placeholder="Find your favorite movie"/>
+      <input class="search__submit" type="submit" value="Search"/>
+    </form>
+    <main class="movie-place" id="place"></main>
+    <section class="container-modal">
+      <article class="modal"></article>
+    </section>
+  </body>
+</html>
+<script src="js/app.js" type="module"></script>

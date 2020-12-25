@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        -let Title='The Movie App'
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title= Title
+        link(rel="stylesheet" href="./css/sass/main.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet")
+    body
+        header
+            nav(class="navigation")
+                a(href="/")
+                    img(src="./asset/Img/logo.jpg" alt="Logo" class="navigation__logo")
+                ul.navigation__ul
+                    li.navigation__li: a(class="navigation__link" href="/") HOME 
+                    li.navigation__li: a(class="navigation__link" href="#") THE BEST
+                    li.navigation__li: a(class="navigation__link" href="#") PREMIUM
+        form(class="search")
+            input(type="search" class="search__input" placeholder="Find your favorite movie")
+            input(type="submit" value="Search" class="search__submit")
+        main(id="place" class="movie-place")
+
+script(src="js/app.js" type="module")
